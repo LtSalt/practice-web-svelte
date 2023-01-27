@@ -5,7 +5,9 @@
 </script>
 
 <Header></Header>
-<!-- <slot></slot> -->
+<main>
+    <slot></slot>
+</main>
 <Footer></Footer>
 
 

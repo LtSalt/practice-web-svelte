@@ -1,15 +1,10 @@
-<script>
-
-</script>
-
-
 <header>
-    <div id="logo">Serious Inc</div>
+    <div id="logo"><a href="http://localhost:5173/">Serious Inc</a></div>
     <nav>
         <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Sponsors</li>
+            <li><a href="./about">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Sponsors</a></li>
         </ul>
     </nav>
 </header>

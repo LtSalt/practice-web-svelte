@@ -3,7 +3,7 @@
 </script>
 
 <footer>
-    <div>C David Will</div>
+    <div>2023</div>
     <div>A not so serious project</div>
     <div>Built with Sveltekit!</div>
 </footer>

@@ -1,3 +1,5 @@
+/* TODO more global styles? */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,4 +14,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+a {
+    color: inherit;
+}
+
+main {
+    flex: 1;
+    padding: 20px 150px;
+    background-color: #FFFF;
+}
+
+@media screen and (max-width: 600px)  {
+    main {
+        padding: 0 4px;
+    }
 }
