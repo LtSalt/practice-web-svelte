@@ -1,0 +1,36 @@
+:root {
+    --bg-secondary: #475569;
+    --color-secondary: #F1F5F9;
+    --color-accent: #FB923C;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Abel';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondary {
+    background-color: var(--bg-secondary);
+    color: var(--color-secondary);
+}
+
+.hover:hover, a:hover {
+    cursor: pointer;
+    color: var(--color-accent);
+}
+
+a {
+    color: inherit;
+}
+
+

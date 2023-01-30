@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "fruit": "banana",
+    "origin": "regional",
+    "production": "conventional"
+  },
+  {
+    "id": 2,
+    "fruit": "banana",
+    "origin": "regional",
+    "production": "conventional"
+  },
+  {
+    "id": 3,
+    "fruit": "banana",
+    "origin": "regional",
+    "production": "conventional"
+  },
+  {
+    "id": 4,
+    "fruit": "banana",
+    "origin": "regional",
+    "production": "conventional"
+  },
+  {
+    "id": 5,
+    "fruit": "banana",
+    "origin": "regional",
+    "production": "organic"
+  },
+  {
+    "id": 6,
+    "fruit": "banana",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 7,
+    "fruit": "banana",
+    "origin": "abroad",
+    "production": "organic"
+  },
+  {
+    "id": 8,
+    "fruit": "banana",
+    "origin": "abroad",
+    "production": "organic"
+  },
+  {
+    "id": 9,
+    "fruit": "banana",
+    "origin": "abroad",
+    "production": "organic"
+  },
+  {
+    "id": 10,
+    "fruit": "apple",
+    "origin": "abroad",
+    "production": "organic"
+  },
+  {
+    "id": 11,
+    "fruit": "apple",
+    "origin": "regional",
+    "production": "conventional"
+  },
+  {
+    "id": 12,
+    "fruit": "apple",
+    "origin": "regional",
+    "production": "organic"
+  },
+  {
+    "id": 13,
+    "fruit": "apple",
+    "origin": "regional",
+    "production": "organic"
+  },
+  {
+    "id": 14,
+    "fruit": "apple",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 15,
+    "fruit": "apple",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 16,
+    "fruit": "apple",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 17,
+    "fruit": "apple",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 18,
+    "fruit": "apple",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 19,
+    "fruit": "apple",
+    "origin": "abroad",
+    "production": "organic"
+  },
+  {
+    "id": 20,
+    "fruit": "apple",
+    "origin": "abroad",
+    "production": "organic"
+  },
+  {
+    "id": 21,
+    "fruit": "kiwi",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 22,
+    "fruit": "kiwi",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 23,
+    "fruit": "kiwi",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 24,
+    "fruit": "kiwi",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 25,
+    "fruit": "kiwi",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 26,
+    "fruit": "kiwi",
+    "origin": "abroad",
+    "production": "conventional"
+  },
+  {
+    "id": 27,
+    "fruit": "kiwi",
+    "origin": "abroad",
+    "production": "organic"
+  },
+  {
+    "id": 28,
+    "fruit": "kiwi",
+    "origin": "abroad",
+    "production": "organic"
+  },
+  {
+    "id": 29,
+    "fruit": "kiwi",
+    "origin": "abroad",
+    "production": "organic"
+  },
+  {
+    "id": 30,
+    "fruit": "kiwi",
+    "origin": "regional",
+    "production": "organic"
+  }
+]
