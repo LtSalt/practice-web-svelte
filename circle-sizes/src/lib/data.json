@@ -1,0 +1,50 @@
+[
+  {
+    "town": "x",
+    "market": "a",
+    "employees": 20,
+    "customers": 100
+  },
+  {
+    "town": "x",
+    "market": "b",
+    "employees": 30,
+    "customers": 90
+  },
+  {
+    "town": "x",
+    "market": "c",
+    "employees": 300,
+    "customers": 400
+  },
+  {
+    "town": "x",
+    "market": "d",
+    "employees": 50,
+    "customers": 500
+  },
+  {
+    "town": "y",
+    "market": "a",
+    "employees": 30,
+    "customers": 100
+  },
+  {
+    "town": "y",
+    "market": "b",
+    "employees": 40,
+    "customers": 700
+  },
+  {
+    "town": "y",
+    "market": "c",
+    "employees": 200,
+    "customers": 50
+  },
+  {
+    "town": "y",
+    "market": "d",
+    "employees": 70,
+    "customers": 20
+  }
+]

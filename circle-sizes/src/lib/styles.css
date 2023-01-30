@@ -1,0 +1,40 @@
+:root {
+    --color-primary: grey;
+    --color-secondary: white;
+    --color-accent: orange;
+    --bg-primary: white;
+    --bg-secondary: grey;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-family: "Source Code Pro", monospace;
+}
+a {
+    color: inherit;
+}
+.primary {
+    color: var(--color-primary);
+    background-color: var(--bg-primary);
+}
+.secondary {
+    color: var(--color-secondary);
+    background-color: var(--bg-secondary);
+}
+.accent {
+    color: var(--color-accent);
+}
+.hover:hover, a:hover {
+    color: var(--color-accent);
+    cursor: pointer;
+}
