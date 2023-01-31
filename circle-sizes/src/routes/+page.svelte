@@ -17,9 +17,4 @@
         flex-direction: column;
         align-items: center;
     }
-    Filter {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
 </style>
