@@ -1,0 +1,21 @@
+:root {
+    --bg-color-foreground: #FAFAFA;
+    /* --bg-color-background: red; */
+    --bg-color-background: #E5E5E5
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    height: 100vh;
+    background-color: var(--bg-color-background);
+}
+.foreground {
+    background-color: var(--bg-color-foreground);
+}
+.background {
+    background-color: var(--bg-color-background);
+}
