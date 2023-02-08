@@ -5,16 +5,16 @@
 
 <header class={backgroundColor}>
     <div id="left">
-        Thing
-        <slot></slot>
+        <slot name="left">
+        </slot>
     </div>
     <div id="middle">
-        <slot></slot>
-        Thing
+        <slot name="middle">
+        </slot>
     </div>
     <div id="right">
-        <slot></slot>
-        ThingThing
+        <slot name="right">
+        </slot>
     </div>
 </header>
 

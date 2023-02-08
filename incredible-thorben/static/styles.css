@@ -1,7 +1,8 @@
 :root {
     --bg-color-foreground: #FAFAFA;
-    /* --bg-color-background: red; */
-    --bg-color-background: #E5E5E5
+    --bg-color-background: #F5F5F5;
+    --color-foreground: #171717;
+    --color-background: ;
 }
 * {
     margin: 0;
@@ -15,7 +16,15 @@ body {
 }
 .foreground {
     background-color: var(--bg-color-foreground);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.hover {
+    background-color: #D4D4D4;
 }
 .background {
     background-color: var(--bg-color-background);
+}
+button {
+    border: none;
+    background-color: inherit;
 }
