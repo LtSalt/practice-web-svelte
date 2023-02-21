@@ -1,0 +1,41 @@
+:root:has(#light:checked) {
+    --clr-text: hsl(200, 15%, 8%);
+    --clr-text-weak: hsl(0, 0%, 52%);
+    --bg-body: hsl(0, 0%, 98%);
+    --bg-element:  hsl(0, 0%, 100%);
+}
+:root:has(#dark:checked) {
+    --clr-text: hsl(0, 0%, 100%);
+    --clr-text-weak: hsl(0, 0%, 52%);
+    --bg-body: hsl(207, 26%, 17%);
+    --bg-element:  hsl(209, 23%, 22%);
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--clr-text)
+}
+input {
+    font-family: inherit;
+}
+.element {
+    background-color: var(--bg-element);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 4px;
+}
+.fw-light {
+    font-weight: 300;
+}
+.fw-bold {
+    font-weight: 600;
+}
+.fw-bolder {
+    font-weight: 800;
+}
+
