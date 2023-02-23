@@ -1,0 +1,46 @@
+:root:has(#light:checked) {
+    --clr-primary: black;
+    --clr-accent: cadetblue;
+    --bg-primary: #E5E7EB;
+    --bg-element: white; 
+}
+:root:has(#dark:checked) {
+    --clr-primary: white;
+    --clr-accent: orange;
+    --bg-primary:  #4B5563;
+    --bg-element: #1F2937; 
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: "Nunito Sans", sans-serif;
+    min-height: 100svh;
+    color: var(--clr-primary);
+    background-color: var(--bg-primary);
+}
+input, button, textarea {
+    font-family: inherit;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+}
+.accent {
+    color: var(--clr-accent)
+}
+.hover:hover {
+    cursor: pointer;
+    color: var(--clr-accent);
+}
+.element {
+    background-color: var(--bg-element);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.field {
+    border: 1px solid var(--clr-primary);
+    border-radius: 4px;
+}
+
