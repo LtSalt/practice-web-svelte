@@ -17,17 +17,33 @@
     box-sizing: border-box;
 }
 body {
+    min-height: 100svh;
     font-family: "Nunito Sans", sans-serif;
     background-color: var(--bg-body);
-    color: var(--clr-text)
+    color: var(--clr-text);
 }
-input {
+input, select, option {
     font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border: none;
 }
 .element {
     background-color: var(--bg-element);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    border-radius: 4px;
+    overflow: hidden;
+}
+.weak {
+    color: var(--clr-text-weak);
+}
+svg {
+    stroke: var(--clr-text)
 }
 .fw-light {
     font-weight: 300;

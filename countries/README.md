@@ -1,38 +1,56 @@
-# create-svelte
+# Notes
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Ressources
+- [Kevin Powell on switching your theme with pure CSS](https://www.youtube.com/watch?v=fyuao3G-2qg&t=795s)
+- <!-- Ressources
+- https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box
+ -->
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+## TODO
+- grid layout
+- input search
+- style select
+- select search
+- details page
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Notes
 
-# create a new project in my-app
-npm create svelte@latest my-app
+### Insert SVG into Searchbar
+
+1. Use as background image
+
+```{css}
+input {
+    background-image: url(./search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 0.5rem;
+}
 ```
 
-## Developing
+Problem: cannot change background color
+    -although you could use the `data:image` hack
+    - or put it in it's own container and apply a filter?
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```bash
-npm run dev
+2. use a mask, then apply a background color
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```{css}
+input {
+    mask: url(./search.svg) no-repeat 100% 100%;
+    mask-position: center;
+    mask-position-x: 0.5rem;
+    background-color: green;
+    -webkit-mask: url(./search.svg) no-repeat 100% 100%;
+    -webkit-mask-position: center;
+    -webkit-mask-position-x: 0.5rem;
+}
 ```
 
-## Building
+Problem: Will make anything else within the input field invisible
 
-To create a production version of your app:
+3. Create two wrappers and put SVG in markup, apply global styles
 
-```bash
-npm run build
-```
 
-You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

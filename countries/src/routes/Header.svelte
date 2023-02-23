@@ -1,12 +1,21 @@
-<!-- TODO
-- align icon and text -->
-
 <script>
     import { MoonIcon, SunIcon } from "svelte-feather-icons";  
+    import { browser } from "$app/environment";
+    import { onMount } from "svelte";
     
-    let theme = "light";
+    let theme;
+    let pageload;
+
+    onMount(async() => {
+        const storedTheme = localStorage.getItem("theme", theme);
+        theme = storedTheme ? storedTheme : "light";
+        pageload = true;
+    })
+    
+    $: if (browser && pageload) localStorage.setItem("theme", theme);
 </script>
 
+{#if theme}
 <header class="element">
     <h1>Where in the world?</h1>
     <div id="theme-switcher">
@@ -22,14 +31,15 @@
         </label>
     </div>
 </header>
+{/if}
 
 <style>
-    header {
+    header.element {
+        margin-bottom: 30px;
         padding: 0.7rem 5vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 30px;
     }
     h1 {
         font-size: 1.7rem

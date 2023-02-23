@@ -1,16 +1,38 @@
-<!-- Ressources
-- https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box
- -->
-
 <script>
-    let region;
+    import { SearchIcon } from "svelte-feather-icons";
+    // import { createEventDispatcher } from "svelte";
+    import { pattern, region } from "$lib/stores/filters.js";
 
+    let inputValue = "";
+    // $: inputValue = $pattern.toString();
+    function debounce(func, timeout = 500){
+        let timer;
+        return (...args) => {
+            clearTimeout(timer);
+            timer = setTimeout(() => { func.apply(this, args); }, timeout);
+        };
+    };
+
+    function filterPattern(event) {
+        $pattern = new RegExp(event.target.value.toLowerCase())
+    };
 </script>
 
-<form on:submit|preventDefault>
-    <input id="searchbox" class="element" type="text" placeholder="Search for a country">
-    <!-- <label for="pick-region">Region Name</label> -->
-    <select id="pick-region" class="element" name="pick-region" bind:value={region}>
+<div class="wrapper">
+    <div id="input-wrapper">
+        <div id="icon-wrapper">
+            <SearchIcon></SearchIcon>
+        </div>
+        <input 
+            id="searchbox" 
+            class="element" 
+            type="text" 
+            placeholder="Search for a country"
+            on:input={debounce(filterPattern)}
+            value={inputValue}>
+            <!-- on:input={debounce(filterPattern)}> -->
+    </div>
+    <select id="pick-region" class="element" name="pick-region" bind:value={$region}>
         <option value="" disabled selected hidden>Filter by region</option>
         <option value="Africa">Africa</option>
         <option value="America">America</option>
@@ -18,19 +40,35 @@
         <option value="Europe">Europe</option>
         <option value="Oceania">Oceania</option>
     </select>
-</form>
-
+</div>
+    
 <style>
-    form {
+    .wrapper {
         display: flex;
         padding: 0 5vw;
+        justify-content: space-between;
     }
     input, select {
         border: none;
-        padding: 0.8rem;
+    }
+    #input-wrapper {
+        position: relative;
+
+    }
+    #icon-wrapper {
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem 0 0.2rem;
+
+    }
+    input {
+        width: 300px;
+        height: 100%;
+        padding: 1rem 0.5rem 0.8rem 2rem;
     }
     select {
-        margin-left: auto;
         cursor: pointer;
     }
 
