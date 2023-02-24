@@ -1,0 +1,48 @@
+:root:has(#light:checked) {
+    --clr-primary: black;
+    --clr-accent: orange;
+    --bg-body: #D1D5DB;
+    --bg-element: #FAFAFA;
+}
+
+:root:has(#dark:checked) {
+    --clr-primary: white;
+    --clr-accent: orange;
+    --bg-body: #6B7280;
+    --bg-element: #374151;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100svh;
+    background-color: var(--bg-body);
+    color: var(--clr-primary)
+}
+
+input, button {
+    color: inherit;
+    background-color: inherit;
+    font-family: inherit;
+    border: none;
+}
+
+.accent {
+    color: var(--clr-accent);
+}
+
+.hover:hover {
+    color: var(--clr-accent);
+    cursor: pointer;
+}
+
+.element {
+    background-color: var(--bg-element);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
