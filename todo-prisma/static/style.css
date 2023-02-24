@@ -28,6 +28,9 @@ input, button, textarea {
     background-color: inherit;
     border: none;
 }
+button:hover {
+    cursor: pointer;
+}
 .accent {
     color: var(--clr-accent)
 }

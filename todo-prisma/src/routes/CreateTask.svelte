@@ -8,6 +8,7 @@
 <style>
     form {
         border-radius: 4px;
+        height: fit-content;
         display: grid;
         gap: 8px;
     }

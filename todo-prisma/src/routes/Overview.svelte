@@ -1,5 +1,6 @@
 <script>
     import { getContext } from "svelte";
+    import { enhance } from "$app/forms";
 
     const data = getContext("data")
     $: ({ tasks } = data);
@@ -8,10 +9,17 @@
 <section id="overview">
     <h3>Your Tasks</h3>
     {#each tasks as task}
-    <div class="task element">
-        <header>{task.title}</header>
-        <p>{task.content}</p>
-    </div>
+        <div class="task element">
+            <header>{task.title}</header>
+            <p>{task.content}</p>
+            <form action="?/deleteTask&id={task.id}" method="POST">
+                <!-- use:enhance -->
+                    <button type="submit" class="element hover">
+                        Delete Task
+                    </button>
+            </form>
+            <a href="/{task.id}" role="button">Edit Task</a>
+        </div>
     {/each}
 </section>
 

@@ -33,7 +33,7 @@
 
 <style>
     header{
-        padding: 4px 12px;
+        padding: 4px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;

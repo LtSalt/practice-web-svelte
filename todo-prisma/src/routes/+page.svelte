@@ -18,8 +18,10 @@
 
 <style>
     main {
-        margin: 20px 12px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width: 70%;
+        width: clamp(400px, 70%, 1000px);
+        margin: 30px auto;
     }
 </style>
