@@ -5,7 +5,9 @@
 {#if $search}
     <section id="current-search">
         {#each $search as result}
-            <img id="movie-poster" src={result.Poster} alt="Poster for the {result.Type} {result.Title}">
+            <a href="/{result.imdbID}">
+                <img class="movie-poster" src={result.Poster} alt="Poster for the {result.Type} {result.Title}">
+            </a>
         {/each}
     </section>
 {/if}
@@ -16,7 +18,7 @@
         display: grid;
         gap: 20px
     }
-    #movie-poster {
+    .movie-poster {
         width: 100%;
         cursor: pointer;
     }
