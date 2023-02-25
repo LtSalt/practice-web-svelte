@@ -6,11 +6,12 @@
 - Trycatch block with fetch
 - local storage statt store?
 - save last search and fill on refresh
-- Modal for Movie details
-  - implement database connection here
+- implement database connection here
     - add to watch list
     - create arbitrary tags
-
+- add button on movie details page
+- tabs
+  - tab for saved movies
 
 ## Question
 - how do I receive multiple datasets on a page at the same time?

@@ -3,6 +3,7 @@
     --clr-accent: orange;
     --bg-body: #D1D5DB;
     --bg-element: #FAFAFA;
+    --bg-element-reverse: #D1D5DB;
 }
 
 :root:has(#dark:checked) {
@@ -10,6 +11,10 @@
     --clr-accent: orange;
     --bg-body: #6B7280;
     --bg-element: #374151;
+    --bg-element-reverse: #6B7280;
+    --clr-element-reverse: #374151;
+
+
 }
 
 *,
@@ -44,5 +49,11 @@ input, button {
 
 .element {
     background-color: var(--bg-element);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    overflow: hidden;
+}
+
+.element-reverse {
+    background-color: var(--bg-element-reverse);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }

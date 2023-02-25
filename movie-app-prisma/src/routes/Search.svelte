@@ -19,7 +19,7 @@
         }
     }
 
-    $: console.log($search)
+    // $: console.log($search)
 </script>
 
 <div id="search-wrapper">

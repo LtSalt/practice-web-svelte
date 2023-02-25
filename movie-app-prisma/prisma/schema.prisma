@@ -13,6 +13,13 @@ datasource db {
 model Movie {
   id Int @id @default(autoincrement())
   title String
+  plot String
   genre String
+  director String
+  imdb String
+  rotten String
+  meta String
+  personal String 
   comment String
+  tags String
 }

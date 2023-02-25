@@ -19,16 +19,16 @@
     <header class="element">
         <h1 id="title">Fancy Movie App</h1>
         <div id="theme-toggle">
-            <label class="hover" class:active={theme === "light"} for="light">
+            <label class="hover" for="light">
                 <SunIcon></SunIcon>
                 Light Mode
+                <input id="light" type=radio name="theme" bind:group={theme} value="light">
             </label>
-            <input id="light" type=radio name="theme" bind:group={theme} value="light">
-            <label class="hover" class:active={theme === "dark"} for="dark">
+            <label class="hover" for="dark">
                 <MoonIcon></MoonIcon>
                 Dark Mode
+                <input id="dark" type=radio name="theme" bind:group={theme} value="dark">
             </label>
-            <input id="dark" type=radio name="theme" bind:group={theme} value="dark">
         </div>
     </header>
 {/if}
@@ -48,7 +48,7 @@
         align-items: center;
         gap: 8px;
     }
-    .active {
+    label:has(input:checked) {
         display: none;
     }
 </style>
